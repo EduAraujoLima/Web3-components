@@ -1,3 +1,26 @@
+:root {
+  /* violet */
+  --primary-color: 111, 76, 255;
+
+  /* white */
+  --text-color: 256, 256, 256;
+}
+
 body {
-  background: orange;
+  font-family: 'Rubik', sans-serif;
+  background-color: rgb(30, 30, 30);
+  text-align: center;
+  padding-top: 2rem;
+}
+
+.text-glow {
+  font-size: 3rem;
+  color: rgb(var(--text-color));
+  text-shadow: 0 0 80px rgb(192 219 255 / 75%), 0 0 20px rgb(65 120 255 / 24%);
+}
+
+.text-gradient {
+  background: linear-gradient(to right, #30cfd0, #c43ad6);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
